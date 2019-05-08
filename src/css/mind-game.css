@@ -1,0 +1,22 @@
+.mind-game{background-color: #fff;padding: 20px;border-radius: 4px;box-shadow: 0 0 15px #000;}
+*{margin:0;padding: 0;box-sizing: border-box;}
+.board{display: inline-block;background-color: #f2f2f2;box-shadow: 0 0 15px rgba(0,0,0,.3);min-height: 350px;counter-reset: count;margin: 40px 20px;}
+.board > div{width: 20%;float: left;text-align: center;background-color: #333;color: #fff;height: 20%;border: 1px solid #999;cursor: pointer;font-family: Impact,fantacy;font-size: 30px;line-height: 2;position: relative;overflow: hidden;transition: all linear 0.1s;-webkit-user-select:none;-moz-user-select:none;user-select:none;letter-spacing: 1px;counter-increment: count;}
+.board > div:hover{transform: scale(1.1);z-index: 11;}
+.board > div:after{content: '❎';position: absolute;left: 0;right: 0;top: 0;bottom: 0;transition: all linear 0.2s;background-color: #222;line-height: 2;}
+.board > div.revealed:after,.board > div.reveal:after{transform: translateX(100%);}
+.time,.score{position: fixed;top: 6%;left: 20%;font-size: 18px;font-family: Arial;}
+.score:before{content: 'Score: ';}
+.time{right: 20%;left: inherit;}
+.time:before{content: 'Time: ';}
+.button{background-color: #333;color: #fff;font-family: Impact;font-size: 24px;padding: 10px;display: inline-block;position: fixed;text-transform: uppercase;letter-spacing: 1.2px;cursor: pointer;box-shadow: 2px 2px #999;position: relative;transition: all linear 0.1s;}
+.welcome{position: absolute;left: 0;right: 0;top: 0;bottom: 0;background-color: #000;z-index: 1;transition: all linear 0.2s;}
+.welcome .play{left: 50%;top:50%;transform: translate(-50%,-50%);}
+.button:hover{margin-left: 2px;margin-top: 2px;box-shadow: 0 0 #999;}
+.pop-up{background-color: #333;color: #fff;font-size: 18px;padding: 20px;text-align: center;margin: 20px 0;border-radius: 10px;}
+.pop-up select{border: 2px solid #fff;font-weight: bold;border-radius: 4px;padding: 5px;cursor: pointer;}
+@media screen and (max-width: 559px){
+.board{left: 10%;right: 10%;}
+.board > div{font-size: 23px;line-height: 3;}
+.board > div:after{line-height: 3;}
+}

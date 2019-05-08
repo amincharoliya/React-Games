@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+*{margin:0;padding:0;box-sizing: border-box;}
+body{background-color: #282c34;font-family: 'Roboto', sans-serif;font-size: 17px;}
+.main{padding-bottom: 65px;min-height: calc(100vh - 65px);}
+.wrapper{max-width: 900px;margin: 0 auto;}
+.game-listing{display: grid;grid-template-columns: 1fr 1fr;column-gap: 20px;row-gap: 20px;
+    li{padding: 15px;list-style: none;color: #333;background-color: #fff;border-radius: 5px;transition: all 0.3s ease;position: relative;
+        h2 a{text-decoration: none;color: #333;margin-bottom: 10px;display: block}
+        &:hover{transform: skew(2deg,-1deg);}
+        > a{position: absolute;top:0;left:0;right:0;bottom:0;}
+    }
+}
+.footer{text-align: center;color: #fff;padding: 20px 0;
+    a{color:#fff;text-decoration: none;font-weight: 400}
+}
