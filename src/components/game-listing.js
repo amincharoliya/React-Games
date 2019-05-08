@@ -6,8 +6,8 @@ const GameListing = () => {
     return(
         <HelmetProvider>
             <Helmet>
-                <title>Welcome to React Tools!</title>
-                <meta name="description" content="Find cool tools developed with react." />
+                <title>Welcome to React Games!</title>
+                <meta name="description" content="Find cool games developed with react." />
             </Helmet>
         
             <div className="wrapper">
