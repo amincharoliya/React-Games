@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <>
       <div className="main">
-        <Router history={hashHistory}>
+        <Router>
           <div>
           <Header/>
           <Switch>
