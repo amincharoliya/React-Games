@@ -104,7 +104,7 @@ const MindGame = () => {
                 <div className="mind-game">
                     <h1 style={{textAlign:'center'}}>Mind Game</h1>
                     <div className="m_game-area" style={game && !scoreCard ? {display: 'block'} : {display: 'none'}}>
-                        <p>{score}</p>
+                        <p>Score: {score}</p>
                         <div className="board">
                             {Character}
                         </div>
