@@ -60,7 +60,7 @@ const MindGame = () => {
         let tileContent;
         switch (answer) {
             case 'level1':
-                for(var i = 0; i<5; i++){
+                for(var i = 0; i<15; i++){
                     let Tlength = tiles.length;
                     tileContent = setOne[Math.floor((setOne.length - 1) * Math.random())];
                     tiles[Tlength] = <div key={Math.random()} onClick={event => handleClick(event.target)}>{tileContent}</div>;
